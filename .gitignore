@@ -1,0 +1,11 @@
+# Installers - These will be uploaded to GitHub Releases
+*.exe
+*.msi
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
