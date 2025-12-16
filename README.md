@@ -115,39 +115,6 @@ Large installer files (.exe, .msi) are **deliberately excluded** from the main r
 
 ---
 
-## 🌍 Deployment
-
-### Deploy to Vercel
-
-1. Go to [Vercel](https://vercel.com)
-2. Sign in with GitHub
-3. Import this repository
-4. Deploy automatically!
-
-### Deploy to GitHub Pages
-
-1. Go to repository **Settings** → **Pages**
-2. Select **Source**: Deploy from `main` branch
-3. Save and wait for deployment
-
----
-
-## 🛠️ Customization
-
-### Update Download Links
-
-Edit `script.js` and update the release URLs:
-
-```javascript
-const downloadLinks = {
-    python: 'https://github.com/adityaverma9777/CodeBendr-WEBSITE-RELEASES-/releases/download/v1.0.0/python-3.10.0-amd64.exe',
-    java: 'https://github.com/adityaverma9777/CodeBendr-WEBSITE-RELEASES-/releases/download/v1.0.0/OpenJDK25U-jdk_x64_windows_hotspot_25.0.1_8.msi',
-    codebendr: 'https://github.com/adityaverma9777/CodeBendr-WEBSITE-RELEASES-/releases/download/v1.0.0/CodeBendrIDE_Setup.exe'
-};
-```
-
----
-
 ## 🤝 Contributing
 
 We welcome contributions! If you'd like to:
