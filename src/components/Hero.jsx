@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import heroImg from '../assets/heroImgCodebendr.png'
-import TypingText from './TypingText'
+import Typingtext from './Typingtext'
 
 const Hero = () => {
   return (
@@ -18,7 +18,7 @@ const Hero = () => {
             Welcome to <span className="text-indigo-500 font-codebendr">CodeBendr IDE</span>
           </h1>
 
-          <TypingText
+          <Typingtext
             text="Your journey to programming excellence starts here!"
             speed={80}
             pauseAfterTyping={1800}
