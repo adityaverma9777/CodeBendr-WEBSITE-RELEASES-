@@ -1,13 +1,15 @@
 import React from 'react'
+import checkmarkIcon from '../assets/icons/checkmark.png'
+import rocketIcon from '../assets/icons/rocket.png'
 
 const About1 = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-24">
+    <section className="min-h-screen py-24">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Title */}
         <h1 className="text-4xl md:text-6xl font-extrabold text-center mb-16">
-          About <span className="text-indigo-500">CodeBendr IDE</span>
+          About <span className="text-indigo-500 font-codebendr">CodeBendr IDE</span>
         </h1>
 
         {/* Main Card */}
@@ -32,9 +34,10 @@ const About1 = () => {
               ].map((item, i) => (
                 <li
                   key={i}
-                  className="p-4 rounded-xl bg-gray-50 hover:scale-105 hover:shadow-lg transition"
+                  className="flex items-center gap-3 p-4 rounded-xl bg-gray-50 hover:scale-105 hover:shadow-lg transition"
                 >
-                  ✅ {item}
+                  <img src={checkmarkIcon} alt="Check" className="w-6 h-6 flex-shrink-0" />
+                  <span>{item}</span>
                 </li>
               ))}
             </ul>
@@ -93,12 +96,13 @@ const About1 = () => {
               href="https://www.adityavermaworks.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 rounded-2xl font-semibold text-white
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-white
               bg-gradient-to-r from-indigo-500 to-purple-500
               hover:scale-110 hover:shadow-[0_0_40px_rgba(99,102,241,0.7)]
               transition-all duration-300"
             >
-              Visit My Official Website 🚀
+              Visit My Official Website
+              <img src={rocketIcon} alt="Rocket" className="w-5 h-5" />
             </a>
           </div>
 

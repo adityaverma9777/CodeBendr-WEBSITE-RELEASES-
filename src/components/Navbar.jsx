@@ -19,7 +19,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img src={logo} alt="logo" className="h-10 w-10 mr-2" />
-          <h3 className="font-semibold text-xl text-gray-700">
+          <h3 className="font-semibold text-xl text-gray-700 font-codebendr">
             CodeBendr IDE
           </h3>
         </Link>
@@ -33,9 +33,8 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className={`md:hidden text-2xl text-gray-700 transition-opacity ${
-            open ? 'opacity-0 pointer-events-none' : 'opacity-100'
-          }`}
+          className={`md:hidden text-2xl text-gray-700 transition-opacity ${open ? 'opacity-0 pointer-events-none' : 'opacity-100'
+            }`}
           onClick={() => setOpen(true)}
         >
           ☰

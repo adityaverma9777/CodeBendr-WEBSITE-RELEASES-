@@ -15,7 +15,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold mb-6">
-            Welcome to <span className="text-indigo-500">CodeBendr IDE</span>
+            Welcome to <span className="text-indigo-500 font-codebendr">CodeBendr IDE</span>
           </h1>
 
           <TypingText

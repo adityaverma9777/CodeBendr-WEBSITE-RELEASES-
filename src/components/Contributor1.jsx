@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ContactForm from './ContactForm'
+import globeIcon from '../assets/icons/globe.png'
+import thankYouIcon from '../assets/icons/thank-you.png'
+import gearIcon from '../assets/icons/gear.png'
+import rocketIcon from '../assets/icons/rocket.png'
 
 const Contributor1 = () => {
   return (
-    <section className="bg-gray-50 min-h-screen py-20">
+    <section className="min-h-screen py-20">
       <div className="max-w-5xl mx-auto px-6">
 
         {/* Page Title */}
@@ -15,37 +20,67 @@ const Contributor1 = () => {
           in making programming education accessible to everyone.
         </p>
 
-        {/* Lead Developer Card */}
-        <div className="bg-white rounded-2xl shadow-md p-10 text-center mb-16">
-          <h3 className="text-xl text-indigo-500 font-semibold mb-2">
-            👨‍💻 Lead Developer
-          </h3>
+        {/* Team Members */}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {/* Aditya Verma Card */}
+          <div className="relative backdrop-blur-2xl bg-white/20 border border-white/40 rounded-2xl shadow-2xl p-10 text-center transition-all duration-500 hover:scale-105 hover:shadow-[0_0_50px_rgba(34,211,238,0.5)] hover:bg-white/30 hover:border-white/60 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-200/30 to-indigo-200/30 rounded-2xl"></div>
+            <div className="relative z-10 flex flex-col h-full">
+              <h2 className="text-3xl font-bold text-gray-800 mb-2">
+                Aditya Verma
+              </h2>
 
-          <h2 className="text-3xl font-bold text-gray-800 mb-1">
-            Aditya Verma
-          </h2>
+              <p className="text-gray-500 mb-6">
+                Software Developer & Releases Manager
+              </p>
 
-          <p className="text-gray-500 mb-6">
-            Creator & Lead Developer
-          </p>
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Codes the software, and handles releases for IDE.
+              </p>
 
-          <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
-            Aditya Verma is the creator and lead developer of CodeBendr IDE.
-            With a strong passion for education and technology, he built CodeBendr
-            to provide students and beginners with a powerful, integrated learning
-            environment for programming.
-          </p>
+              <a
+                href="https://www.adityavermaworks.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl font-semibold text-white
+              bg-cyan-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(6,182,212,0.7)]
+              transition-all duration-300 mt-auto"
+              >
+                <img src={globeIcon} alt="Website" className="w-5 h-5" />
+                Visit Website
+              </a>
+            </div>
+          </div>
 
-          <a
-            href="https://www.adityavermaworks.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-4 rounded-2xl font-semibold text-white
-            bg-indigo-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(99,102,241,0.7)]
-            transition-all duration-300"
-          >
-            🌐 Visit Website
-          </a>
+          {/* Saumya Chaudhary Card */}
+          <div className="relative backdrop-blur-2xl bg-white/20 border border-white/40 rounded-2xl shadow-2xl p-10 text-center transition-all duration-500 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.5)] hover:bg-white/30 hover:border-white/60 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-200/30 to-pink-200/30 rounded-2xl"></div>
+            <div className="relative z-10 flex flex-col h-full">
+              <h2 className="text-3xl font-bold text-gray-800 mb-2">
+                Saumya Chaudhary
+              </h2>
+
+              <p className="text-gray-500 mb-6">
+                Website Developer
+              </p>
+
+              <p className="text-gray-600 leading-relaxed mb-8">
+                Maintains the website, manages the UI/UX of this project.
+              </p>
+
+              <a
+                href="https://portfolio-saumyachaudhary.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl font-semibold text-white
+              bg-purple-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(168,85,247,0.7)]
+              transition-all duration-300 mt-auto"
+              >
+                <img src={globeIcon} alt="Website" className="w-5 h-5" />
+                Visit Website
+              </a>
+            </div>
+          </div>
         </div>
 
         {/*Contributor*/}
@@ -80,9 +115,12 @@ Frontend Developer (React)          </p>
 
         {/* Special Thanks */}
         <div className="bg-white rounded-2xl shadow-md p-8 mb-16">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            🙏 Special Thanks
-          </h2>
+          <div className="flex items-center gap-3 mb-4">
+            <img src={thankYouIcon} alt="Thank You" className="w-8 h-8" />
+            <h2 className="text-2xl font-semibold text-gray-800">
+              Special Thanks
+            </h2>
+          </div>
 
           <ul className="list-disc pl-6 text-gray-600 space-y-2">
             <li>The VS Code team at Microsoft for an amazing foundation</li>
@@ -94,9 +132,12 @@ Frontend Developer (React)          </p>
 
         {/* Built With */}
         <div className="bg-white rounded-2xl shadow-md p-8 mb-16">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-            ⚙️ Built With
-          </h2>
+          <div className="flex items-center gap-3 mb-6">
+            <img src={gearIcon} alt="Built With" className="w-8 h-8" />
+            <h2 className="text-2xl font-semibold text-gray-800">
+              Built With
+            </h2>
+          </div>
 
           <div className="grid sm:grid-cols-2 gap-6 text-gray-600">
             <div>
@@ -122,20 +163,24 @@ Frontend Developer (React)          </p>
         </div>
 
         {/* Contribute */}
-        <div className="bg-indigo-50 rounded-2xl p-10 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            🚀 Want to Contribute?
-          </h2>
+        <div className="bg-white rounded-2xl p-10 text-center shadow-md">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <img src={rocketIcon} alt="Rocket" className="w-10 h-10" />
+            <h2 className="text-3xl font-bold text-gray-800">
+              Want to Contribute?
+            </h2>
+          </div>
 
           <p className="text-gray-600 max-w-3xl mx-auto mb-6">
             We welcome contributions from the community! You can help by improving
             course content, fixing bugs, suggesting new features, or enhancing documentation.
           </p>
 
-          <p className="text-gray-600">
-            Visit our website and fill out the contact form to share your ideas with us!
+          <p className="text-gray-600 mb-8">
+            Fill the form to connect with us!
           </p>
-          
+
+          <ContactForm />
         </div>
 
       </div>

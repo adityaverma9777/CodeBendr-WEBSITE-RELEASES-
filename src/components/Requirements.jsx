@@ -26,7 +26,7 @@ const Requirements = () => {
   }
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20">
       <div className="max-w-5xl mx-auto px-6 text-center">
 
         {/* Heading */}
@@ -35,29 +35,38 @@ const Requirements = () => {
         </h1>
 
         <p className="text-gray-600 mb-10 text-xl">
-          To use <span className="font-semibold text-indigo-500">CodeBendr IDE</span> effectively,
+          To use <span className="font-semibold text-indigo-500 font-codebendr">CodeBendr IDE</span> effectively,
           please make sure the following prerequisites are installed on your system.
         </p>
 
         {/* Requirements Cards */}
         <div className="grid gap-6 sm:grid-cols-2 mb-16">
 
-          <div className="bg-white p-6 rounded-xl shadow-sm text-left transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(99,102,241,0.35)]">
-            <h3 className="font-semibold text-lg text-gray-800 mb-2">1. Python</h3>
+          <div className="bg-white p-6 rounded-xl shadow-sm text-center transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(99,102,241,0.35)]">
+            <div className="flex justify-center mb-4">
+              <img src={pythonLogo} alt="Python" className="w-12 h-12" />
+            </div>
+            <h3 className="font-semibold text-lg text-gray-800 mb-2">Python</h3>
             <p className="text-gray-600 text-sm">
               Required for Python programming lessons. Install the LTS version.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow-sm text-left transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(99,102,241,0.35)]">
-            <h3 className="font-semibold text-lg text-gray-800 mb-2">2. Java SDK</h3>
+          <div className="bg-white p-6 rounded-xl shadow-sm text-center transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(99,102,241,0.35)]">
+            <div className="flex justify-center mb-4">
+              <img src={javaLogo} alt="Java" className="h-12 w-auto object-contain" />
+            </div>
+            <h3 className="font-semibold text-lg text-gray-800 mb-2">Java SDK</h3>
             <p className="text-gray-600 text-sm">
               Required for Java programming lessons.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow-sm text-left transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(99,102,241,0.35)] sm:col-span-2">
-            <h3 className="font-semibold text-lg text-gray-800 mb-2">3. CodeBendr IDE</h3>
+          <div className="bg-white p-6 rounded-xl shadow-sm text-center transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(99,102,241,0.35)] sm:col-span-2">
+            <div className="flex justify-center mb-4">
+              <img src={logo} alt="CodeBendr" className="w-12 h-12" />
+            </div>
+            <h3 className="font-semibold text-lg text-gray-800 mb-2 font-codebendr">CodeBendr IDE</h3>
             <p className="text-gray-600 text-sm">
               Main CodeBendr IDE application to learn more efficiently.
             </p>
