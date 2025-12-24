@@ -48,6 +48,36 @@ const Contributor1 = () => {
           </a>
         </div>
 
+        {/*Contributor*/}
+          <div className="bg-white rounded-2xl shadow-md p-10 text-center mb-16">
+          <h3 className="text-xl text-indigo-500 font-semibold mb-2">
+            👨‍💻 Contributor
+          </h3>
+
+          <h2 className="text-3xl font-bold text-gray-800 mb-1">
+            Saumya Chaudhary
+          </h2>
+
+          <p className="text-gray-500 mb-6">
+
+Frontend Developer (React)          </p>
+
+          <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
+          Saumya contributed to the development of CodeBendr IDE by migrating the website to a modern React-based architecture. With a focus on clean UI, responsiveness, and performance, Saumya helped enhance the overall user experience and maintainability of the project.
+          </p>
+
+          <a
+            href="https://portfolio-saumyachaudhary.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-4 rounded-2xl font-semibold text-white
+            bg-indigo-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(99,102,241,0.7)]
+            transition-all duration-300"
+          >
+            🌐 Visit Website
+          </a>
+        </div>
+
         {/* Special Thanks */}
         <div className="bg-white rounded-2xl shadow-md p-8 mb-16">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">
