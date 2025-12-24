@@ -31,7 +31,7 @@ const Contributor1 = () => {
               </h2>
 
               <p className="text-gray-500 mb-6">
-                Software Developer & Releases Manager
+                Software Developer
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-8">
@@ -53,8 +53,8 @@ const Contributor1 = () => {
           </div>
 
           {/* Saumya Chaudhary Card */}
-          <div className="relative backdrop-blur-2xl bg-white/20 border border-white/40 rounded-2xl shadow-2xl p-10 text-center transition-all duration-500 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.5)] hover:bg-white/30 hover:border-white/60 overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-200/30 to-pink-200/30 rounded-2xl"></div>
+          <div className="relative backdrop-blur-2xl bg-white/20 border border-white/40 rounded-2xl shadow-2xl p-10 text-center transition-all duration-500 hover:scale-105 hover:shadow-[0_0_50px_rgba(34,211,238,0.5)] hover:bg-white/30 hover:border-white/60 overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-br from-cyan-200/30 to-indigo-200/30 rounded-2xl"></div>
             <div className="relative z-10 flex flex-col h-full">
               <h2 className="text-3xl font-bold text-gray-800 mb-2">
                 Saumya Chaudhary
@@ -73,7 +73,7 @@ const Contributor1 = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl font-semibold text-white
-              bg-purple-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(168,85,247,0.7)]
+              bg-cyan-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(6,182,212,0.7)]
               transition-all duration-300 mt-auto"
               >
                 <img src={globeIcon} alt="Website" className="w-5 h-5" />
@@ -81,36 +81,6 @@ const Contributor1 = () => {
               </a>
             </div>
           </div>
-        </div>
-
-        {/*Contributor*/}
-          <div className="bg-white rounded-2xl shadow-md p-10 text-center mb-16">
-          <h3 className="text-xl text-indigo-500 font-semibold mb-2">
-            👨‍💻 Contributor
-          </h3>
-
-          <h2 className="text-3xl font-bold text-gray-800 mb-1">
-            Saumya Chaudhary
-          </h2>
-
-          <p className="text-gray-500 mb-6">
-
-Frontend Developer (React)          </p>
-
-          <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto mb-8">
-          Saumya contributed to the development of CodeBendr IDE by migrating the website to a modern React-based architecture. With a focus on clean UI, responsiveness, and performance, Saumya helped enhance the overall user experience and maintainability of the project.
-          </p>
-
-          <a
-            href="https://portfolio-saumyachaudhary.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-4 rounded-2xl font-semibold text-white
-            bg-indigo-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(99,102,241,0.7)]
-            transition-all duration-300"
-          >
-            🌐 Visit Website
-          </a>
         </div>
 
         {/* Special Thanks */}
